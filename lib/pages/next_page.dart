@@ -22,6 +22,7 @@ class _NextPageState extends State<NextPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
+        physics: const BouncingScrollPhysics(),
         child: Column(
           children: [
             Stack(
@@ -264,6 +265,9 @@ class _NextPageState extends State<NextPage> {
                                 color: Colors.amber),
                           ),
                         ),
+                      ),
+                      const SizedBox(
+                        height: 50,
                       )
                     ],
                   )
