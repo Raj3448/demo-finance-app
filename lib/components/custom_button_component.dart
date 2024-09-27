@@ -83,6 +83,7 @@ class _CustomAnimatedButtonState extends State<CustomAnimatedButton> {
             padding:
                 widget.padding ?? const EdgeInsets.symmetric(horizontal: 10.0),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 widget.icon ?? const SizedBox(),
                 if (widget.icon != null)
